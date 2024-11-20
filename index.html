@@ -6,79 +6,88 @@
     <title>Team Zenit | Universidad Europea de Madrid</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background: linear-gradient(to right, #1a75ff, #004080);
+            background-color: #004080;
             color: white;
-            padding: 1rem 2rem;
+            padding: 2rem 1.5rem;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: bold;
         }
         header p {
-            margin: 0.5rem 0 0;
             font-size: 1.2rem;
+            margin-top: 0.5rem;
         }
         nav {
-            background: #004080;
-            color: white;
-            padding: 0.5rem;
             text-align: center;
+            margin-top: 1.5rem;
         }
         nav a {
-            color: white;
+            color: #004080;
             text-decoration: none;
             margin: 0 1rem;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 0.5rem;
+            transition: color 0.3s;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #1a75ff;
         }
         main {
-            padding: 2rem;
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
         section h2 {
             font-size: 2rem;
-            color: #1a75ff;
+            color: #004080;
+            margin-bottom: 1rem;
+        }
+        section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
         }
         footer {
-            background: #004080;
+            background-color: #004080;
             color: white;
             text-align: center;
-            padding: 1rem 0;
+            padding: 1.5rem;
+            font-size: 1rem;
         }
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
         .social-links {
-            margin-top: 1rem;
-            text-align: center;
+            margin-top: 1.5rem;
         }
         .social-links a {
             color: #004080;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 1.5rem;
             font-size: 1.5rem;
-            display: inline-block;
-            padding: 10px;
-            background-color: #f4f4f9;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: color 0.3s;
         }
         .social-links a:hover {
-            background-color: #1a75ff;
-            color: white;
+            color: #1a75ff;
         }
     </style>
 </head>
@@ -88,7 +97,7 @@
         <p>Universidad Europea de Madrid</p>
     </header>
     <nav>
-        <a href="#about">About Us</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#events">Events</a>
         <a href="#contact">Contact</a>
@@ -96,61 +105,36 @@
     <main>
         <section id="about">
             <h2>About Us</h2>
-            <p>Team Zenit is a student-run aerospace club dedicated to advancing knowledge and passion for aerospace engineering and aviation. Our mission is to innovate, educate, and inspire the next generation of aerospace enthusiasts.</p>
+            <p>Team Zenit is a student-run aerospace club at Universidad Europea de Madrid, passionate about advancing aerospace engineering. We innovate, educate, and inspire the future of aerospace technology.</p>
         </section>
         
         <section id="projects">
             <h2>Our Projects</h2>
             <article>
                 <h3>Astraeus I</h3>
-                <p>
-                    The Astraeus I marks the inaugural official project of Team Zenit at Universidad Europea. Initiated in late October 2023 and successfully concluded in early 2024, this project represents a significant milestone for our club. 
-                    The Astraeus I is a uniquely designed rocket, entirely constructed from carbon fiber, which was meticulously treated and manufactured by our club members.
-                </p>
-                <p>
-                    The primary objective of this project was to obtain the L1 rocketry certification, achieved by successfully launching and precisely landing the rocket. 
-                    This accomplishment not only demonstrates our technical capabilities but also serves as a foundational step in our journey of learning about rocket design and manufacturing.
-                </p>
-                <p>
-                    Furthermore, the body of the Astraeus I will be repurposed for the construction of our next rocket, the Astraeus II, which is already under development. 
-                    This project has laid the groundwork for our future endeavors and continues to inspire our commitment to advancing in the field of rocketry.
-                </p>
+                <p>The Astraeus I was the inaugural rocket project of Team Zenit. Built entirely from carbon fiber, it successfully achieved L1 certification by completing a successful launch and landing. This milestone marks our club's technical capabilities and our commitment to the development of rocketry.</p>
             </article>
 
             <article>
                 <h3>Astraeus II</h3>
-                <p>
-                    The Astraeus II marks the second official project undertaken by Team Zenit at Universidad Europea. 
-                    The main goal is to refurbish the body of the existing Astraeus I, implementing modifications to improve its performance. These upgrades include the integration of an I motor and advanced electronics such as a pressure gauge, altimeter, and velocimeter.
-                </p>
-                <p>
-                    The successful launch of the Astraeus II took place on October 20, 2024, further showcasing our club’s dedication to innovation and technical excellence.
-                </p>
+                <p>The Astraeus II project builds upon Astraeus I by refurbishing its body with enhancements like an I motor and advanced electronics. The project culminated in a successful launch in October 2024, demonstrating further technical advancements.</p>
             </article>
 
             <article>
                 <h3>Vrackie I</h3>
-                <p>
-                    Vrackie I is Team Zenit’s latest project, designed as an enhanced iteration of our previous rockets, Astraeus I and Astraeus II. It benefits greatly from the knowledge and experience we gained during their development.
-                </p>
-                <p>
-                    The manufacturing of Vrackie I is already underway. The rocket features a body constructed primarily from carbon fiber, except for the electronic bay, which is made from glass fiber to facilitate radio signal transmission for monitoring purposes.
-                </p>
-                <p>
-                    Vrackie I aims to obtain an L2 certification by utilizing a powerful solid motor, building on the foundation of the L1 certification achieved with Astraeus I.
-                </p>
+                <p>Vrackie I is an enhanced iteration of our previous rockets, utilizing lessons learned from Astraeus I and II. Its goal is to achieve L2 certification using a powerful solid motor and further refine our design process.</p>
             </article>
         </section>
 
         <section id="events">
             <h2>Upcoming Events</h2>
-            <p>Join us for workshops, seminars, and competitions that bring together enthusiasts and professionals from the aerospace industry.</p>
+            <p>Stay tuned for workshops, talks, and competitions focused on aerospace innovation, where students and professionals come together to share knowledge.</p>
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Have questions or want to join Team Zenit? Email us at <a href="mailto:info@teamzenit.org">info@teamzenit.org</a>.</p>
-            <p>Follow us on our social media:</p>
+            <p>For inquiries or to join Team Zenit, email us at <a href="mailto:info@teamzenit.org">info@teamzenit.org</a>.</p>
+            <p>Follow us on social media:</p>
             <div class="social-links">
                 <a href="https://www.instagram.com/airdivisionuem/" target="_blank">Instagram</a>
                 <a href="https://www.tiktok.com/@spacedivisionuem?lang=es" target="_blank">TikTok</a>
