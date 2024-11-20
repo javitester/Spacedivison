@@ -15,29 +15,28 @@
         header {
             background: linear-gradient(to right, #1a75ff, #004080);
             color: white;
-            padding: 2rem 1rem;
+            padding: 1rem 2rem;
             text-align: center;
-            border-bottom: 2px solid #111;
         }
         header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         header p {
-            margin: 0.5rem 0;
+            margin: 0.5rem 0 0;
             font-size: 1.2rem;
         }
         nav {
             background: #004080;
             color: white;
-            padding: 1rem;
+            padding: 0.5rem;
             text-align: center;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 2rem;
-            font-size: 1.1rem;
+            margin: 0 1rem;
+            font-size: 1rem;
         }
         nav a:hover {
             text-decoration: underline;
@@ -46,39 +45,40 @@
             padding: 2rem;
         }
         section {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
         section h2 {
             font-size: 2rem;
             color: #1a75ff;
-            border-bottom: 1px solid #444;
-            padding-bottom: 0.5rem;
         }
         footer {
             background: #004080;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 1rem 0;
         }
         footer p {
             margin: 0;
             font-size: 0.9rem;
         }
+        .social-links {
+            margin-top: 1rem;
+            text-align: center;
+        }
         .social-links a {
             color: #004080;
             text-decoration: none;
-            margin: 0 20px;
+            margin: 0 15px;
             font-size: 1.5rem;
             display: inline-block;
             padding: 10px;
-            transition: color 0.3s ease;
+            background-color: #f4f4f9;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .social-links a:hover {
+            background-color: #1a75ff;
             color: white;
-        }
-        .social-links {
-            text-align: center;
-            margin-top: 1.5rem;
         }
     </style>
 </head>
@@ -88,7 +88,7 @@
         <p>Universidad Europea de Madrid</p>
     </header>
     <nav>
-        <a href="#about">About</a>
+        <a href="#about">About Us</a>
         <a href="#projects">Projects</a>
         <a href="#events">Events</a>
         <a href="#contact">Contact</a>
@@ -96,36 +96,61 @@
     <main>
         <section id="about">
             <h2>About Us</h2>
-            <p>Team Zenit is a student-run organization focused on advancing aerospace engineering at Universidad Europea de Madrid. We aim to innovate and inspire the next generation of aerospace engineers.</p>
+            <p>Team Zenit is a student-run aerospace club dedicated to advancing knowledge and passion for aerospace engineering and aviation. Our mission is to innovate, educate, and inspire the next generation of aerospace enthusiasts.</p>
         </section>
         
         <section id="projects">
             <h2>Our Projects</h2>
             <article>
                 <h3>Astraeus I</h3>
-                <p>The Astraeus I is Team Zenit's inaugural project. Launched in early 2024, this carbon-fiber rocket achieved the L1 rocketry certification, setting the foundation for future innovations in rocket design.</p>
+                <p>
+                    The Astraeus I marks the inaugural official project of Team Zenit at Universidad Europea. Initiated in late October 2023 and successfully concluded in early 2024, this project represents a significant milestone for our club. 
+                    The Astraeus I is a uniquely designed rocket, entirely constructed from carbon fiber, which was meticulously treated and manufactured by our club members.
+                </p>
+                <p>
+                    The primary objective of this project was to obtain the L1 rocketry certification, achieved by successfully launching and precisely landing the rocket. 
+                    This accomplishment not only demonstrates our technical capabilities but also serves as a foundational step in our journey of learning about rocket design and manufacturing.
+                </p>
+                <p>
+                    Furthermore, the body of the Astraeus I will be repurposed for the construction of our next rocket, the Astraeus II, which is already under development. 
+                    This project has laid the groundwork for our future endeavors and continues to inspire our commitment to advancing in the field of rocketry.
+                </p>
             </article>
 
             <article>
                 <h3>Astraeus II</h3>
-                <p>Building upon the Astraeus I, the Astraeus II incorporates improvements to enhance performance. The project was launched on October 20, 2024, with the goal of achieving greater stability and reliability.</p>
+                <p>
+                    The Astraeus II marks the second official project undertaken by Team Zenit at Universidad Europea. 
+                    The main goal is to refurbish the body of the existing Astraeus I, implementing modifications to improve its performance. These upgrades include the integration of an I motor and advanced electronics such as a pressure gauge, altimeter, and velocimeter.
+                </p>
+                <p>
+                    The successful launch of the Astraeus II took place on October 20, 2024, further showcasing our club’s dedication to innovation and technical excellence.
+                </p>
             </article>
 
             <article>
                 <h3>Vrackie I</h3>
-                <p>Vrackie I is our latest project, utilizing lessons learned from Astraeus I and II. This rocket will be equipped with advanced electronics and aims to achieve an L2 certification using a solid motor for greater propulsion.</p>
+                <p>
+                    Vrackie I is Team Zenit’s latest project, designed as an enhanced iteration of our previous rockets, Astraeus I and Astraeus II. It benefits greatly from the knowledge and experience we gained during their development.
+                </p>
+                <p>
+                    The manufacturing of Vrackie I is already underway. The rocket features a body constructed primarily from carbon fiber, except for the electronic bay, which is made from glass fiber to facilitate radio signal transmission for monitoring purposes.
+                </p>
+                <p>
+                    Vrackie I aims to obtain an L2 certification by utilizing a powerful solid motor, building on the foundation of the L1 certification achieved with Astraeus I.
+                </p>
             </article>
         </section>
 
         <section id="events">
             <h2>Upcoming Events</h2>
-            <p>Join us at workshops, seminars, and competitions to connect with aerospace professionals and enthusiasts!</p>
+            <p>Join us for workshops, seminars, and competitions that bring together enthusiasts and professionals from the aerospace industry.</p>
         </section>
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Have questions or want to get involved? Reach us at <a href="mailto:info@teamzenit.org" style="color: #1a75ff;">info@teamzenit.org</a>.</p>
-            <p>Follow us on social media:</p>
+            <p>Have questions or want to join Team Zenit? Email us at <a href="mailto:info@teamzenit.org">info@teamzenit.org</a>.</p>
+            <p>Follow us on our social media:</p>
             <div class="social-links">
                 <a href="https://www.instagram.com/airdivisionuem/" target="_blank">Instagram</a>
                 <a href="https://www.tiktok.com/@spacedivisionuem?lang=es" target="_blank">TikTok</a>
