@@ -12,12 +12,14 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            overflow-x: hidden;
         }
         header {
             background-color: #004080;
             color: white;
             padding: 2rem 1.5rem;
             text-align: center;
+            animation: fadeIn 2s ease-out;
         }
         header h1 {
             margin: 0;
@@ -39,15 +41,17 @@
             font-size: 1.1rem;
             font-weight: 500;
             padding: 0.5rem;
-            transition: color 0.3s;
+            transition: color 0.3s, transform 0.3s;
         }
         nav a:hover {
             color: #1a75ff;
+            transform: scale(1.1);
         }
         main {
             padding: 3rem 1.5rem;
             max-width: 1000px;
             margin: 0 auto;
+            animation: fadeInUp 1.5s ease-out;
         }
         section {
             margin-bottom: 2.5rem;
@@ -56,11 +60,15 @@
             font-size: 2rem;
             color: #004080;
             margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
         }
         section p {
             font-size: 1.1rem;
             line-height: 1.6;
             color: #555;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
         }
         footer {
             background-color: #004080;
@@ -72,6 +80,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            animation: fadeIn 2s ease-out;
         }
         footer p {
             margin: 0;
@@ -85,11 +94,34 @@
             text-decoration: none;
             margin: 0 1rem;
             font-size: 2rem;
-            transition: color 0.3s;
+            transition: color 0.3s, transform 0.3s;
         }
         footer .social-links a:hover {
             color: #1a75ff;
+            transform: scale(1.2);
         }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
